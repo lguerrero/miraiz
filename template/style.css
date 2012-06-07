@@ -1,0 +1,100 @@
+
+body{
+	font-family:'Lucida Grande', Verdana, Arial, sans-serif; 
+	font-size:12px;
+	margin:0 auto;
+	padding:0;
+	background-color:#003333;
+}
+
+#wrapper{
+	margin:0 auto;
+	width: auto; 	
+	height:655px;
+	background-color:#003333;
+}
+
+#wrapper div.container{
+	position:relative;
+	overflow:hidden;
+}
+
+#menu{
+	width:auto;
+	margin:0 auto; 
+	height:100px;
+	background: url(../images/fondo1.png) repeat-x; 
+	background-color:#06111E;
+}
+
+#main{
+	 width:900px;
+	 height:450px;
+	 background-color:#FFFFFF;
+	 border: 4px double #666666;
+}
+
+#home{
+	 width:900px;
+	 height:450px;
+	 background-image:url(../images/fondoinicio.jpg);
+}
+
+#miarbol{
+	 width:900px;
+	 height:450px;
+	 position:relative;
+	 overflow: auto;
+}
+
+#amigos{
+	 width:900px;
+	 height:450px;
+	 position:relative;
+	 overflow: auto;
+}
+
+#invitar{
+	 width:900px;
+	 height:450px;
+	 position:relative;
+	 overflow: auto;
+}
+
+#donar{
+	 width:900px;
+	 height:450px;
+}
+
+#footer{ 
+	margin-top:10px;
+	width:auto; 
+	height: 200px;
+	border-top:1px solid #CCCCCC;
+	font-size:10px;
+	text-align:center;
+	color:#333333;
+	background-image:url(../images/ramasleft.png);
+	background-position:left;
+	background-repeat:no-repeat;
+	
+}
+
+#fondo1{
+	background-image:url(../images/ramasright.png);
+	background-position:right;
+	background-repeat:no-repeat;
+	background-color:#06111E;
+}
+
+/*
+h1 a 
+{
+	text-decoration: none;
+    color: #3b5998;
+}
+h1 a:hover 
+{
+	text-decoration: underline;
+}
+ */
