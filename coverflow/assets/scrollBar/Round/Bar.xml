@@ -1,0 +1,3 @@
+<bars>
+	<bar leftButton = "assets/scrollBar/Round/l_btn.png" rightButton = "assets/scrollBar/Round/r_btn.png" track = "assets/scrollBar/Round/track.png" scrollButton = "assets/scrollBar/Round/btn_track.png" leftButtonVisible="true" rightButtonVisible="true" trackVisible="true" scrollButtonVisible="true"></bar>
+</bars>

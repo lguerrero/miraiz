@@ -1,0 +1,98 @@
+<settings>
+  <General_Properties>
+    <assets value="images.xml"/>
+    <componentWidth value="600"/>
+    <componentHeight value="320"/>
+    <moveX value="0"/>
+    <moveY value="-60"/>
+    <cameraX value="0"/>
+    <cameraY value="0"/>
+    <cameraZ value="-347"/>
+    <cameraRotationX value="0"/>
+    <cameraRotationY value="0"/>
+    <cameraRotationZ value="0"/>
+    <cameraFocus value="170"/>
+    <cameraZoom value="1"/>
+    <cameraUpDown value="0"/>
+    <cameraLeftRight value="0"/>
+    <showAbout value="true"/>
+    <useColorbox value="false"/>
+  </General_Properties>
+  <Colorbox_Properties>
+    <transition value="elastic"/>
+    <innerWidth value="900"/>
+    <innerHeight value="500"/>
+    <slideshow value="false"/>
+    <slideshowSpeed value="2500"/>
+  </Colorbox_Properties>
+  <CoverFlow_Properties>
+    <startIndex value="0"/>
+    <planeAngle value="70"/>
+    <planeSeparation value="120"/>
+    <planeOffset value="10"/>
+    <planeOffsetZ value="-170"/>
+    <tweenTime value="0.8"/>
+    <functione value="Expo"/>
+    <method value="easeOut"/>
+  </CoverFlow_Properties>
+  <Reflection_Properties>
+    <alpha value="60"/>
+    <ratio value="209"/>
+    <distance value="26"/>
+    <dropOff value="0"/>
+  </Reflection_Properties>
+  <Scroll_Bar>
+    <type_Bar value="assets/scrollBar/Round/Bar.xml"/>
+    <width value="400"/>
+    <positionY value="276"/>
+  </Scroll_Bar>
+  <Play_Settings>
+    <showPlay value="true"/>
+    <autoPlay value="true"/>
+    <slideShowTime value="2.4"/>
+    <leftRightPlay value="right"/>
+    <ifLastPicture value="back"/>
+    <hPosition value="center"/>
+    <vPosition value="top"/>
+    <hPadding value="0"/>
+    <vPadding value="8"/>
+    <playBtn value="assets/buttons/play1.png"/>
+    <pauseBtn value="assets/buttons/pause2.png"/>
+  </Play_Settings>
+  <ToolTip_Properties>
+    <type value="followMouse"/>
+    <functionEasy value="Strong"/>
+    <appearance value="topv"/>
+    <tweenTime value="1"/>
+    <toolOffSet value="center"/>
+    <position value="top"/>
+    <positionFreeX value="296"/>
+    <positionFreeY value="202"/>
+    <padding value="10"/>
+    <backColor value="16777215"/>
+    <backColor2 value="13421772"/>
+    <backAlpha value="0.8"/>
+    <cornerRadius value="3"/>
+    <toolDistance value="7"/>
+    <useHook value="true"/>
+    <hookSize value="5"/>
+    <borderThickness value="1"/>
+    <borderColor value="5592405"/>
+    <fontFace value="verdana"/>
+    <fontColor value="3355443"/>
+    <fontSize value="14"/>
+  </ToolTip_Properties>
+  <Background_Properties>
+    <fillType value="solid"/>
+    <backgroundImage value=""/>
+    <backgroundFitting value="repeat"/>
+    <backgroundColor1 value="0xffffff"/>
+    <backgroundColor2 value="0"/>
+    <backgroundAlpha value="1"/>
+    <bgCornerRadius value="0"/>
+    <gradientRotation value="0"/>
+    <gradientRatio value="0"/>
+    <gradientPosX value="0"/>
+    <gradientPosY value="0"/>
+  </Background_Properties>
+</settings>
