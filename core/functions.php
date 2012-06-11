@@ -32,12 +32,19 @@ function insert_sesion($array) //funcion de prueba
 	VALUES('12345', '1223wr44r4rer', '11', 'sig11111111') ON DUPLICATE KEY UPDATE last_login=now()" );
 	}
 
-function insert_datos_user($array) //guarda datos de usuarios
+function insert_datos_user($array) //guarda datos de usuarios manual
 	{
 	$GLOBALS['mysql']->query( "INSERT INTO ".$GLOBALS['table_fb_user']." (id,name,first_name,middle_name,last_name,link,username,birthday,gender,email,locale) 
 	VALUES(".$GLOBALS['mysql']->set_values_user( $array ).")ON DUPLICATE KEY UPDATE email=email" ); 
 	}
 
+function insert_user($array) //guarda datos de usuarios automatic
+	{
+	$GLOBALS['mysql']->query( "INSERT INTO ".$GLOBALS['table_fb_user']." 
+	(".$GLOBALS['mysql']->set_keys_user( $array ).")
+	VALUES(".$GLOBALS['mysql']->set_values_user( $array ).")ON DUPLICATE KEY UPDATE email=email" ); 
+	}
+	
 function get_list_users()
 	{
 	$results = $GLOBALS['mysql']->results( "SELECT uid FROM ".$GLOBALS['table_fb_sessions'] );

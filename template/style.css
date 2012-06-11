@@ -87,6 +87,31 @@ body{
 	background-color:#06111E;
 }
 
+#fondo2{
+	width:900px;
+	height:450px;
+	position:relative;
+	overflow: auto;
+	background-image:url(../images/fondo2.png);
+}
+
+#logueo{
+	width:900px;
+	height:450px;
+	position:relative;
+	overflow: auto;
+	background-image:url(../images/fondolog.png);
+}
+
+#mantenedor{
+	width:1024px;
+	height:450px;
+	position:relative;
+	overflow: auto;
+	background-image:url(../images/fondomantenedor.png);
+	border: 4px double #666666;
+}
+
 /*
 h1 a 
 {

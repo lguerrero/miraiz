@@ -125,32 +125,28 @@ class MySQL
 	
 	public function set_keys_user( $array )
 		{
+		$valuesUser	= $array;
+		$values_temp_users = array();
 		if( is_array( $array ) )
 			{
 			if( count( $array ) > 0 )
 				{
-				if($value == "id"){
-				$keys	= array_keys( $array );}
-				if($value == "name"){
-				$keys	= array_keys( $array );}
-				if($value == "first_name"){
-				$keys	= array_keys( $array );}
-				if($value == "middle_name"){
-				$keys	= array_keys( $array );}
-				if($value == "last_name"){
-				$keys	= array_keys( $array );}
-				if($value == "link"){
-				$keys	= array_keys( $array );}
-				if($value == "username"){
-				$keys	= array_keys( $array );}
-				if($value == "gender"){
-				$keys	= array_keys( $array );}
-				if($value == "email"){
-				$keys	= array_keys( $array );}
-				if($value == "locale"){
-				$keys	= array_keys( $array );}
-			
-				return implode( ",", $keys );
+				foreach( $valuesUser as $key => $temp )
+				{
+				if($key == "id"){$values_temp_users[] = $key;}
+				if($key == "name"){$values_temp_users[] = $key;}
+				if($key == "first_name"){$values_temp_users[] = $key;}
+				if($key == "middle_name"){$values_temp_users[] = $key;}
+				if($key == "last_name"){$values_temp_users[] = $key;}
+				if($key == "link"){$values_temp_users[] = $key;}
+				if($key == "username"){$values_temp_users[] = $key;}
+				if($key == "birthday"){$values_temp_users[] = $key;}
+				if($key == "gender"){$values_temp_users[] = $key;}
+				if($key == "email"){$values_temp_users[] = $key;}
+				if($key == "locale"){$values_temp_users[] = $key;}
+				}
+				//print_r($values_temp_users); //imprime el arreglo
+				return implode( ",",$values_temp_users);
 				}
 			}
 		}
