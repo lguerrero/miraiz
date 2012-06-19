@@ -1,6 +1,9 @@
 <div id="main">
 	<div id="fondo2">
-        <div style="font-size:25px; font-family: 'Rosewood Std Regular'; font-weight:bold; text-align:left; margin: 90px 0 0 40px;">T&eacute;rminos y Condiciones:</div>
+        <div style="font-size:25px; font-family: 'Rosewood Std Regular'; font-weight:bold; text-align:left; margin: 90px 0 0 40px;">
+          <p>&nbsp;</p>
+          <p>T&eacute;rminos y Condiciones:</p>
+        </div>
         
         <div style="font-size:20px; font-family: 'Courier New', Courier, monospace; text-align:left; margin:0 0 0 45px;"><p>
         

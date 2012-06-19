@@ -1,10 +1,7 @@
-
-<div style=align down ></div>
 <center>
 	<div id="main">
-		<div class="container"></div> 
-			<div id="donar">	
-            <h2>&nbsp;</h2>
+	  <div id="donar">	
+        <h2>&nbsp;</h2>
             <h2>Si quieres contribuir con esta aplicacion haz click en donar</h2>
             <p>&nbsp;</p>
             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=christian%2ejmarin%40gmail%2ecom&lc=ES&item_name=Mi%20Raiz&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted" target="_blank"><img src="../images/donar.png" width="167" height="102" /></a>

@@ -11,6 +11,7 @@ $table_fb_status = "fb_status";
 $base = dirname(__FILE__) . DIRECTORY_SEPARATOR;
 $f_core = $base . "core" . DIRECTORY_SEPARATOR;
 $f_template = $base . "template" . DIRECTORY_SEPARATOR;
+$f_login = $base . "login" . DIRECTORY_SEPARATOR;
  
 $extension_file = ".php";
 
@@ -21,22 +22,28 @@ $appUrl = "http://apps.facebook.com/arbol-genealogico";
 * Facebook dirige al usuario a la baseUrl tras autentificarlo
 * Comprobamos si nos ha devuelto un $_GET['code']
 * para redirigirlo al appBaseUrl 
-*/
+
 if (isset($_GET['code'])){
  	header("Location: " . $appUrl);
   	exit;
 }  
-
+*/
 //requiere
 require $f_core . 'base_facebook.php'; //cargando 
 require $f_core . 'facebook.php'; //Incluimos el PHP SDK v.3.0.0 de Facebook 
 require $f_core . 'mysql.php'; //Incluidmos las funciones mysql
 require $f_core . 'functions.php'; //Incluimos las funciones propias
 require $f_core . 'gfacebook.php'; //cargando 
+
 //fB datos app
 $appId = '232238550217441';
 $appSecret = 'fc6a3a1a162a562b37a5f4aa4a478c52';
 $invitarMessage = "Te invito a crear tu propia Arbol Genealogico";
+
+//validacion admin
+$uidsergio = '1143706756';
+$uidchristian = '527675629';
+$uidluis = '1220047303';
  
 // Creamos un nuevo objeto Facebook con los datos de nuestra aplicación (cambia los datos por los de tu App ID y tu App Secret).
 $facebook = new Facebook(array(
@@ -56,7 +63,8 @@ if ($session) {
 	$user_profile = $facebook->api('/me');
 	$amigos = $facebook->api('/me/friends');
 	save_sesion($session);
-	insert_datos_user($user_profile);
+	//insert_datos_user($user_profile);
+	insert_user($user_profile);
   } catch (FacebookApiException $e) {
     error_log($e);
     $user = null;
@@ -95,6 +103,9 @@ $json_main = json_decode(
 
 $json_publish = json_decode(
 '{"bottons":[{"name":"Publicar","target":"_top","sk":"send"}]}');
+
+$json_login = json_decode(
+'{"bottons":[{"name":"Login","target":"_top","sk":"login"}]}');
 
 $page = ( isset( $_GET['sk'] ) && !empty( $_GET['sk'] ) ) ? $_GET['sk'] : "home";
 

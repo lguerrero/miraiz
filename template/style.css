@@ -45,6 +45,14 @@ body{
 	 height:450px;
 	 position:relative;
 	 overflow: auto;
+	 background-color:#6699FF;
+}
+#miarbol2{
+	 width:900px;
+	 height:300px;
+	 position:relative;
+	 overflow: auto;
+	 background-color:#0066FF;
 }
 
 #amigos{
@@ -52,6 +60,7 @@ body{
 	 height:450px;
 	 position:relative;
 	 overflow: auto;
+	  background-image:url(../images/fondo3.jpg);
 }
 
 #invitar{
@@ -59,11 +68,15 @@ body{
 	 height:450px;
 	 position:relative;
 	 overflow: auto;
+	  background-image:url(../images/fondo3.jpg);
 }
 
 #donar{
 	 width:900px;
 	 height:450px;
+	 position:relative;
+	 overflow: auto;
+	 background-image:url(../images/fondo3.jpg);
 }
 
 #footer{ 
@@ -92,7 +105,7 @@ body{
 	height:450px;
 	position:relative;
 	overflow: auto;
-	background-image:url(../images/fondo2.png);
+	background-image:url(../images/fondo2.jpg);
 }
 
 #logueo{
@@ -100,15 +113,16 @@ body{
 	height:450px;
 	position:relative;
 	overflow: auto;
-	background-image:url(../images/fondolog.png);
+	background-image:url(../images/fondolog.jpg);
 }
 
 #mantenedor{
-	width:1024px;
+	width:1280px;
 	height:450px;
 	position:relative;
 	overflow: auto;
-	background-image:url(../images/fondomantenedor.png);
+	background-color:#FFFFFF;
+	/*background-image:url(../images/fondomantenedor.png);*/
 	border: 4px double #666666;
 }
 

@@ -68,4 +68,34 @@ function delete_user( $uid, $sig )
 			return false;
 			}
 	}
+	
+function ListBoxFriend()
+{
+	echo "<select name='friends'>";
+	echo "<option value='0'></option>";
+	$facebookFriendsURL = "https://graph.facebook.com/me/friends?access_token=".$GLOBALS['access_token'];
+	$respuesta = file_get_contents($facebookFriendsURL);
+	$amigos =  json_decode($respuesta,true);
+	asort($amigos['data']);
+	foreach($amigos['data'] as $amigo)
+	{
+		echo "<option value='".$amigo['name']."'>".$amigo['name']."</option>";
+	}
+	echo "</select>";
+}
+
+function file_get_contents_curl($url)
+{
+    $ch = curl_init();
+ 
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+ 
+    $data = curl_exec($ch);
+    curl_close($ch);
+ 
+    return $data;
+}
 ?>

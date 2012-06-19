@@ -13,7 +13,7 @@
 			<a id="select" href="<?php echo $appUrl . "/?sk=tyc" ?>" target="_self">T&eacute;rminos y Condiciones</a>
 			</div>
 			<div style="position:relative; top:118px;">
-			&copy;<?php echo date("Y"); ?><?php echo $GLOBALS['appTitle']; ?> 
+			&copy;<?php echo date("Y"); ?><?php echo $GLOBALS['appTitle']; ?> | Cont&aacute;ctanos para dise&ntilde;ar tu aplicaci&oacute;n sobre Facebook
 			</div>
 			
 			
