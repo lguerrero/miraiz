@@ -3,9 +3,7 @@
     	<div style="position:relative; font-size:15px; top:180px; font-family: 'Stencil Std'; font-weight:bold; color:#CC0000">
 			<?php session_start();
              
-            //datos para establecer la conexion con la base de mysql.
-            mysql_connect('74.54.131.130','visual_test','proyecto1234')or die ('Ha fallado la conexi&oacute;n: '.mysql_error());
-            mysql_select_db('visual_pruebas')or die ('Error al seleccionar la Base de Datos: '.mysql_error());
+      
              
             function quitar($mensaje)
             {
