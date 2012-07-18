@@ -1,12 +1,11 @@
-
 <div id="mantenedor">
 	<?php
 	// Incluimos la clase
 	require_once 'Aco_DataGrid.php'; 
 	
 	// Conectamos a la base de datos
-	$c = mysql_connect('74.54.131.130','visual_test','proyecto1234')or die ('Ha fallado la conexi&oacute;n: '.mysql_error());
-    mysql_select_db('visual_pruebas', $c)or die ('Error al seleccionar la Base de Datos: '.mysql_error());
+	$c = mysql_connect('...','...','...')or die ('Ha fallado la conexi&oacute;n: '.mysql_error());
+    mysql_select_db('...', $c)or die ('Error al seleccionar la Base de Datos: '.mysql_error());
 	
 	// Consulta
 	$sql = 'select * from fb_user';
