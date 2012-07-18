@@ -1,9 +1,9 @@
 <?php 
 //mysql
-$db_host = "74.54.131.130";
-$db_user = "visual_test";
-$db_pass = "proyecto1234";
-$db_name = "visual_pruebas";
+$db_host = "x";
+$db_user = "x";
+$db_pass = "x";
+$db_name = "x";
 $table_fb_sessions = "fb_sessions";
 $table_fb_user = "fb_user";
 $table_fb_status = "fb_status";
@@ -15,8 +15,8 @@ $f_login = $base . "login" . DIRECTORY_SEPARATOR;
  
 $extension_file = ".php";
 
-$appTitle = "Mi Raiz (Arbol Genealogico)";
-$appUrl = "http://apps.facebook.com/arbol-genealogico";
+$appTitle = "nombre";
+$appUrl = "http://apps.facebook.com/....";
 
 /* 
 * Facebook dirige al usuario a la baseUrl tras autentificarlo
@@ -36,16 +36,14 @@ require $f_core . 'functions.php'; //Incluimos las funciones propias
 require $f_core . 'gfacebook.php'; //cargando 
 
 //fB datos app
-$appId = '232238550217441';
-$appSecret = 'fc6a3a1a162a562b37a5f4aa4a478c52';
-$invitarMessage = "Te invito a crear tu propia Arbol Genealogico";
+$appId = '................';
+$appSecret = '..................';
+$invitarMessage = "mensaje";
 
 //validacion admin
-$uidsergio = '1143706756';
-$uidchristian = '527675629';
-$uidluis = '1220047303';
+
  
-// Creamos un nuevo objeto Facebook con los datos de nuestra aplicación (cambia los datos por los de tu App ID y tu App Secret).
+// Creamos un nuevo objeto Facebook con los datos de nuestra aplicaciï¿½n (cambia los datos por los de tu App ID y tu App Secret).
 $facebook = new Facebook(array(
   'appId'  => $appId,
   'secret' => $appSecret,
@@ -71,8 +69,8 @@ if ($session) {
   }
 } // validacion para saber si el usuario esta logueado
 
-// la url de Login o Logout dependerá del estado actual del usuario, si está autentificado o no en nuestra aplicación
-// Aquí obtenemos los permisos del usuario. Por defecto obtenemos una serie de permisos básicos
+// la url de Login o Logout dependerï¿½ del estado actual del usuario, si estï¿½ autentificado o no en nuestra aplicaciï¿½n
+// Aquï¿½ obtenemos los permisos del usuario. Por defecto obtenemos una serie de permisos bï¿½sicos
 if ($user) {
   $logoutUrl = $facebook->getLogoutUrl();
 } else {
